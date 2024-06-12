@@ -132,6 +132,7 @@ const collisionDetection = (comparingCar: Vehicle) => {
     if (comparingCar.x == mainCar.x && comparingCar.y >= mainCar.y - (mainCar.height - 10)) {
         window.alert(`Game Over!!!  score::${score}`)
         score = 0
+        initialCarSpeed = 0.5
         // lane1Car.y = 0;
         // lane2Car.y = 0;
         // lane3Car.y = 0;

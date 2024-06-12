@@ -129,7 +129,7 @@ const randomCombinationGenerator = ()=>{
 
 const collisionDetection = (comparingCar: Vehicle) => {
 
-    if (comparingCar.x == mainCar.x && comparingCar.y >= mainCar.y - (mainCar.height - 10)) {
+    if (comparingCar.x == mainCar.x && (comparingCar.y >= mainCar.y - (mainCar.height - 10) && comparingCar.y < mainCar.y)) {
         window.alert(`Game Over!!!  score::${score}`)
         score = 0
         initialCarSpeed = 0.5
